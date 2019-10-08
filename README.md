@@ -1,1 +1,2 @@
-Life is Tech ! の教材で利用する `Original` テンプレートです。
+### Blog-System
+Qiitaのようなプログラマーが情報交換できるようなSNSを目指して製作中です。
