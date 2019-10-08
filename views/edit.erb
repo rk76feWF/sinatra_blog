@@ -1,0 +1,9 @@
+<form action="/edit" method="post">
+  <input type="text" name="title" class="form-control" placeholder="タイトルを入力">
+  <textarea id="editor"name="body" rows="8" cols="40"></textarea>
+  <input class="btn btn-lg btn-primary" type="submit" value="新規投稿">
+</form>
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script>
+  var simplemde = new SimpleMDE({ element: document.getElementById("editor") });
+</script>

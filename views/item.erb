@@ -1,0 +1,14 @@
+<%# <link rel="stylesheet" href="https://simon.lc/sites/markdown/markdown.css"> %>
+<div class="row">
+  <div class="col-md-12">
+  <div class="markdown-body" id="markdown-body"></div>
+  <div id="mdraw" style="display:none;">
+  <%= @article.body %>
+  </div>
+  <script src="https://cdn.rawgit.com/chjj/marked/master/marked.min.js"></script>
+  <script>
+    marked.setOptions({breaks : true});
+    document.getElementById('markdown-body').innerHTML = marked(document.getElementById('mdraw').innerHTML);
+  </script>
+  </div>
+</div>

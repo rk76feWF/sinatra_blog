@@ -1,0 +1,13 @@
+<div class="row">
+  <% @users.each do |user| %>
+    <div class="col-md-3 text-center">
+      <div class="card">
+        <div class="card-body">
+          <img src="/img/icon.png" class="icon user-icon">
+          <h3>@<%= user.user_name %></h3>
+          <a href="/user/<%= user.id %>" class="btn btn-primary"><%= h(user.user_name) %>さんのページへ</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
